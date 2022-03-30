@@ -41,10 +41,6 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
         
         $oob_code = $params['oobCode'];
 
-
-
-        $oob_code="5qL-Tt9pNO7Ibhx_-3Sfxa8H5zgUMMuSqtsLNsCbG34AAAF_t1_btQ";
-
         $result_message = "Email Adresiniz Dogrulaniyor";
           ob_end_flush();
           ob_implicit_flush();
