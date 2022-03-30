@@ -46,8 +46,8 @@ function verifyAndCreateUser($oob_code){
 
             $email = $firebase_resp["email"];
             $uid = $firebase_resp["localId"];
-            $resp = insertUser($uid, $email);
-            if ($resp == "SUCCESSFUL"){
+            $db_resp = insertUser($uid, $email);
+            if ($db_resp['status'] == "success"){
                 $result['user_created'] = true;
             }
             else{

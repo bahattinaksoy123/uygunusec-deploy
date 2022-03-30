@@ -162,6 +162,7 @@ function insertUser($uid, $email){
             $role = "user";
             mysqli_stmt_bind_param($stmt, "sss", $uid, $email, $role);
             mysqli_stmt_execute($stmt);
+            $status = "success";
             $result= "user-inserted";
             
         }
